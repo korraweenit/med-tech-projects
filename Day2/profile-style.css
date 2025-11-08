@@ -1,0 +1,64 @@
+/* ตั้งค่าพื้นฐานให้ทั้งหน้า */
+body {
+    background-color: #eef2f7; /* สีพื้นหลังเทาฟ้าอ่อนๆ */
+    font-family: Arial, sans-serif;
+    display: flex; /* สั่งให้ของข้างใน body (การ์ด) */
+    justify-content: center; /* "จัดให้อยู่กลางจอ" (แนวนอน) */
+    align-items: center; /* "จัดให้อยู่กลางจอ" (แนวตั้ง) */
+    min-height: 100vh; /* ทำให้ body สูงเต็มจอเป็นอย่างน้อย */
+}
+
+/* 1. นี่คือ "กล่อง" หลักของการ์ด */
+.profile-card {
+    background-color: #ffffff; /* พื้นหลังสีขาว */
+    width: 350px; /* กว้าง 350px */
+    padding: 20px; /* เว้นที่ว่าง "ข้างใน" การ์ด */
+    border-radius: 15px; /* "ขอบมน" ทำให้การ์ดดูสวย */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* ใส่ "เงา" จางๆ ให้การ์ดดูลอยๆ */
+    text-align: center; /* "จัดกลาง" ข้อความทุกอย่างที่อยู่ในการ์ดนี้ */
+}
+
+/* 2. นี่คือ "รูปโปรไฟล์" */
+.profile-card img {
+    width: 120px; /* กว้าง 120px */
+    height: 120px; /* สูง 120px */
+    border-radius: 50%; /* !! ทริค !! 50% จะทำให้รูปสี่เหลี่ยมกลายเป็น "วงกลม" */
+    object-fit: cover; /* ทำให้รูปพอดีวงกลม ไม่บู้บี้ */
+    border: 4px solid #007bff; /* ใส่ "ขอบสีน้ำเงิน" ให้รูป */
+}
+
+/* 3. นี่คือ "หัวข้อ" (ชื่อหมอ) */
+.profile-card h1 {
+    color: #333;
+    font-size: 24px;
+    margin-top: 15px; /* เว้นระยะห่าง "ด้านบน" */
+    margin-bottom: 5px; /* เว้นระยะห่าง "ด้านล่าง" */
+}
+
+/* 4. นี่คือ "ย่อหน้า" (ความเชี่ยวชาญ) */
+.profile-card .specialty {
+    color: #007bff; /* สีน้ำเงิน */
+    font-size: 16px;
+    font-weight: bold; /* ตัวหนา */
+    margin-top: 0;
+}
+
+/* 5. นี่คือ "ลิสต์รายการ" (คุณสมบัติ) */
+.profile-card ul {
+    list-style-type: none; /* เอา "จุด" bullet ออก */
+    padding-left: 0; /* เอา "ระยะเว้น" ด้านซ้ายออก */
+    text-align: left; /* แต่จัดให้ "ข้อความในลิสต์" ชิดซ้าย (เพื่อให้อ่านง่าย) */
+    margin-top: 20px;
+}
+
+.profile-card li {
+    color: #555;
+    font-size: 14px;
+    padding: 5px 0; /* เว้นระยะบนล่างเล็กน้อย */
+    border-bottom: 1px solid #eee; /* ใส่ "เส้นคั่น" บางๆ ระหว่างข้อ */
+}
+
+/* เลือก li ข้อสุดท้าย ให้ไม่ต้องมีเส้นคั่น */
+.profile-card li:last-child {
+    border-bottom: none;
+}

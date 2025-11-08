@@ -1,0 +1,30 @@
+body {background-color: #f0f2f5;}
+.BMI {
+    background-color: #ffffff; /* พื้นหลังสีขาว */
+    width: 350px; /* กว้าง 350px */
+    margin: 15px auto;
+    padding: 20px; /* เว้นที่ว่าง "ข้างใน" การ์ด */
+    border-radius: 15px; /* "ขอบมน" ทำให้การ์ดดูสวย */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* ใส่ "เงา" จางๆ ให้การ์ดดูลอยๆ */
+}
+.BMI h2 {
+    color: #412bc0;
+    text-align: center; /* "จัดกลาง" ข้อความทุกอย่างที่อยู่ในการ์ดนี้ */
+}
+.BMI h3 {
+    color: #c0392b;
+}
+.BMI li {
+    list-style-type: none;
+    border-bottom: 1px solid #eeeeee; /* ตีเส้นคั่นบางๆ สีเทาอ่อน */
+    padding-top: 8px; /* เพิ่มระยะห่าง "ด้านบน" ข้อความ */
+    padding-bottom: 8px; /* เพิ่มระยะห่าง "ด้านล่าง" ข้อความ (ก่อนถึงเส้น) */
+}
+.BMI li:last-child {
+    border-bottom: none; /* เลือก li "ขวดสุดท้าย" ให้ไม่ต้องมีเส้นคั่น */
+}
+
+.BMI ul {
+    list-style-type: none; /* เอา "จุด" bullet ออก */
+    padding-left: 0; /* เอา "ระยะเว้น" ด้านซ้ายออก */
+}

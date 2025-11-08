@@ -1,0 +1,13 @@
+body {background-color: #f0f2f5;}
+.fluid-calculator {
+    background-color: #ffffff; 
+    width: 350px; 
+    margin: 15px auto;
+    padding: 20px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+}
+.fluid-calculator h2 {
+    color: #412bc0;
+    text-align: center;
+}
