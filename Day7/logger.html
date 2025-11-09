@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เครื่องคำนวณ BMI</title>
+    
+    <link rel="stylesheet" href="../Day3/bmi.css">
+</head>
+<body>
+    <div class="BMI">
+
+        <h2>ฟอร์มบันทึกประวัติ</h2>
+        <p>กรอกข้อมูลเพื่อบันทักประวัติ</p>
+
+        <form id="myform"> 
+            <label for="patient-id">HN:</label>
+            <input type="number" id="patient-id">
+            <br>
+            <label for="age">อายุ:</label>
+            <input type="number" id="age">
+            <br>
+            <label for="chief-complaint">อาการ:</label>
+            <input type="text" id="chief-complaint">
+            <br>
+            <button type="submit">save</button> 
+        </form>
+   
+        <ul id="case-list"></ul>
+
+    </div>
+
+    <script src="logger.js"></script>
+</body>
+</html>

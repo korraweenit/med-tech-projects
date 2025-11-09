@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Vitals Dashboard</title>
+    <link rel="stylesheet" href="../Day2/disease-style.css">
+</head>
+<body>
+
+    <div class="disease-card">
+
+        <h2>🩺 แดชบอร์ดสัญญาณชีพ</h2>
+        <p>กำลังดึงข้อมูลล่าสุดจากเซิร์ฟเวอร์...</p>
+
+        <h3>Patient ID: <span id="patient-id">...</span></h3>
+        <hr> <p>อัตราการเต้นหัวใจ: 
+            <strong><span id="heart-rate">--</span></strong> bpm
+        </p>
+        
+        <p>ความดันโลหิต: 
+            <strong><span id="blood-pressure">--/--</span></strong> mmHg
+        </p>
+        
+        <p>อุณหภูมิ: 
+            <strong><span id="temperature">--</span></strong> °C
+        </p>
+        
+
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
